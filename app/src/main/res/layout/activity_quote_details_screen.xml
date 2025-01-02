@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".QuoteDetailsScreen">
+
+    <TextView
+        android:id="@+id/quoteText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="Sample Quote"/>
+
+
+    <Button
+        android:id="@+id/changeBackgroundButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Change Background"
+        />
+
+    <Button
+        android:id="@+id/changeTextColorButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Change Text Color"
+        />
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Card"
+        />
+
+</LinearLayout>
