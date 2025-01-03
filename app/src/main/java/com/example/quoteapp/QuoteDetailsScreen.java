@@ -28,16 +28,22 @@ public class QuoteDetailsScreen extends AppCompatActivity {
         String quote = getIntent().getStringExtra("quote");
         quoteText.setText(quote);
 
-        Button changebackground = findViewById(R.id.changeBackgroundButton);
+        Button changeBackgroundColor = findViewById(R.id.changeBackgroundButton);
+        Button changeTextColor = findViewById(R.id.changeTextColorButton);
 
 
-        changebackground.setOnClickListener(this::changeBackground);
+        changeBackgroundColor.setOnClickListener(this::changeBackgroundColor);
+        changeTextColor.setOnClickListener(this::changeTextColor);
     }
 
-    private void changeBackground(View view) {
+    private void changeBackgroundColor(View view) {
         int[] colors = {Color.RED,Color.BLUE , Color.GREEN , Color.GRAY,Color.YELLOW};
         Random random = new Random();
         view.getRootView().setBackgroundColor(colors[random.nextInt(colors.length)]);
     }
-
+    private void changeTextColor(View view) {
+        int[] colors = {Color.RED,Color.BLUE , Color.GREEN , Color.GRAY,Color.YELLOW};
+        Random random = new Random();
+       quoteText.setTextColor(colors[random.nextInt(colors.length)]);
+    }
 }

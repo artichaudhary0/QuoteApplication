@@ -19,13 +19,13 @@
             android:name=".QuotesScreen"
             android:exported="false" />
         <activity
-            android:name=".SplashScreen"
+            android:name=".CategoryScreen"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".CategoryScreen"
+            android:name=".SplashScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
